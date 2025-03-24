@@ -24,10 +24,25 @@
     </head>
     <body>
         <header>
-            <h1>Current Weather in</h1>
+            <h1>SkyCast, Your One Stop Weather App</h1>
         </header>
         <main>
+            <h2>Your Weather Information</h2>
             
+            <div id="location-info">
+                <p id="location-name">Loading location...</p>
+                <p id="weather-info">Fetching weather...</p>
+            </div>
+
+            <a href="#" id="change-location-link">Change Location</a>
+
+            <form id="location-form" style="display:none">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="Enter city" required>
+                <label for="state">State</label>
+                <input type="text" id="state" placeholder="Enter state" required>
+                <button type="submit">Get Weather</button>
+            </form>
         </main>
         <footer>
             Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
